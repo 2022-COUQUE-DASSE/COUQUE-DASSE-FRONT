@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  position: fixed;
 }
 
 .header {
@@ -15,7 +16,7 @@
   display: flex;
   position: relative;
   background-color: #3a3988;
-  box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 30px 15px rgba(255, 255, 255, 0.25);
 
   z-index: 1;
   border-radius: 10px;

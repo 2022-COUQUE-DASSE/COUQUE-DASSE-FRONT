@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Header } from "../components/Header";
 
 export function Picture() {
   const [data, setData] = useState([]);
@@ -18,6 +19,7 @@ export function Picture() {
   console.log(data);
   return (
     <div>
+      <Header />
       <img src={data}></img>
     </div>
   );
