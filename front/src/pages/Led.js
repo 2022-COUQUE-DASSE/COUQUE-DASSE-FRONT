@@ -4,7 +4,10 @@ export function Led() {
   return (
     <div>
       <Header />
-      led 제어 페이지
+      <img
+        className="grass"
+        src="https://static.vecteezy.com/system/resources/previews/000/517/088/original/vector-landscape-illustration.png"
+      ></img>
     </div>
   );
 }

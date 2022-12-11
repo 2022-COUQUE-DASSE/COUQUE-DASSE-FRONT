@@ -22,8 +22,21 @@
   border-radius: 10px;
 }
 
+@media (max-width: 800px) {
+  .header {
+    top: 4vw;
+    height: 10vw;
+  }
+}
+
 .cloud {
   width: 25%;
+}
+
+@media (max-width: 800px) {
+  .cloud {
+    width: 35%;
+  }
 }
 
 a {

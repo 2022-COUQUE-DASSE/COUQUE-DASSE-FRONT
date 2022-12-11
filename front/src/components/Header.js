@@ -12,10 +12,7 @@ export function Header() {
           </span>
         </Link>
         <Link to="/" style={{ textDecoration: "none" }}>
-          <img
-            className="cloud"
-            src="https://o.remove.bg/downloads/b3510341-5c20-4ac8-bf42-f26c4f4e65d4/image-removebg-preview.png"
-          ></img>
+          <img className="cloud" src="/img/moon_nav.png"></img>
         </Link>
         <Link to="/Led" style={{ textDecoration: "none" }}>
           <span className="headertext">
