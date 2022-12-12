@@ -4,20 +4,22 @@ import { Header } from "../components/Header";
 import "../css/Picture.css";
 
 export function Picture() {
+  const [status, setStatus] = useState(false);
   const [data, setData] = useState("");
+
   const url = "http://10.150.150.72:5000/plant/path";
   useEffect(() => {
     axios
       .get(url)
-      .then(function (response) {
+      .then((response) => {
         setData(response.data);
         console.log("성공");
         console.log(response.data);
       })
-      .catch(function (error) {
+      .catch((error) => {
         console.log("실패");
       });
-  }, []);
+  }, [status]);
 
   return (
     <div>
@@ -28,7 +30,21 @@ export function Picture() {
       ></img>
       <div className="picenter">
         <div className="picturediv">
-          <img src={data} alt="plant-pic"></img>
+          <div className="imgandtext">
+            <div className="divpicenter">
+              <img
+                src="https://cdn.kqnews.kr/news/photo/202203/3174_6257_25.jpg"
+                className="pictureimg"
+                alt="plant-pic"
+              ></img>
+            </div>
+            <div
+              className="loadingbox"
+              onClick={() => setStatus((prev) => !prev)}
+            >
+              <img className="loading" src="/img/loading.png"></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>

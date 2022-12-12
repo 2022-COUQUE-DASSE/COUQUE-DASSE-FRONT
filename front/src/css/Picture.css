@@ -9,8 +9,54 @@
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .picturediv {
+    width: 80%;
+  }
+}
+
 .picenter {
   width: 100%;
   justify-content: center;
   display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divpicenter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.imgandtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.pictureimg {
+  margin-top: 4vw;
+  width: 80%;
+  border-radius: 30px;
+}
+
+@media (max-width: 1000px) {
+  .pictureimg {
+    margin-top: 6vw;
+  }
+}
+
+.loadingbox {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 2.2vw;
+  cursor: pointer;
+}
+
+.loading {
+  width: 10%;
 }
