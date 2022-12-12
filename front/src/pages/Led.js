@@ -3,9 +3,16 @@ import { useState } from "react";
 import "../css/Led.css";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import axios from "axios";
 
 export function Led() {
   const [modal, setModal] = useState(false);
+
+  function ledValueSubmit(){
+    axios
+    .get(`http://10.150.150.72:5000/plant/led?val=${modal}`,1)
+    .then((res)=>console.log(res))
+  }
   return (
     <div className="Ledcenter">
       <Header />
@@ -24,6 +31,10 @@ export function Led() {
               setModal(!modal);
             }}
           >
+            {/* ?val=${modal} */}
+            <form action='http://10.150.150.72:5000/plant/led?val=2' method="get">
+              <button type="submit" value={modal} onClick={axios.get(`http://10.150.150.72:5000/plant/led?val=${modal}`,1).then((res)=>console.log(res))}></button>
+            </form>
             {modal ? <ON /> : null}
             {modal ? null : <OFF />}
           </div>
