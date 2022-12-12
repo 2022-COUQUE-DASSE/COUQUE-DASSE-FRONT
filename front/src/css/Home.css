@@ -18,7 +18,7 @@
   height: 100vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .Homecenter {
     flex-direction: column;
   }
@@ -32,7 +32,7 @@
   justify-content: space-around;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .Hometop {
     flex-direction: column;
     width: 100%;
@@ -54,7 +54,7 @@
   box-shadow: 0px 0px 80px 10px #e13f5e;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .picture {
     width: 30vw;
     height: 30vw;
@@ -68,13 +68,13 @@
   position: relative;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .link {
     width: 100%;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .block {
     width: 10vw;
     height: 10vw;
@@ -87,7 +87,7 @@
   width: 30%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .boximg {
     width: 18%;
   }
@@ -101,7 +101,7 @@
   color: #331745;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .boxtext {
     font-size: 3vw;
   }

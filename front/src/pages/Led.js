@@ -36,6 +36,7 @@ function Modal() {
     <>
       <div className="modal">
         <img className="bulbonimg" src="/img/ON.png"></img>
+        <span className="bulbontext">LED ON</span>
       </div>
     </>
   );
@@ -46,6 +47,7 @@ function Modal2() {
     <>
       <div className="modal">
         <img className="bulboffimg" src="/img/OFF.png"></img>
+        <span className="bulbofftext">LED OFF</span>
       </div>
     </>
   );

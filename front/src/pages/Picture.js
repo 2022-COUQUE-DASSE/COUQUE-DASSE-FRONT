@@ -16,6 +16,7 @@ export function Picture() {
         console.log("실패");
       });
   }, []);
+
   console.log(data);
   return (
     <div>

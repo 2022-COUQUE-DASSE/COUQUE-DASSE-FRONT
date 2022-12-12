@@ -25,10 +25,10 @@
 }
 
 .modal {
-  position: absolute;
-  top: 2vw;
+  position: relative;
+  display: flex;
   width: 100%;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .button {
@@ -42,7 +42,31 @@
   border-radius: 10px;
 }
 
+.bulbontext {
+  position: absolute;
+  bottom: 20vh;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #3db2ff;
+}
+
+.bulbofftext {
+  position: absolute;
+  bottom: 20vh;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #ff2442;
+}
+
+@media (max-width: 1000px) {
+  .bulbofftext,
+  .bulbontext {
+    font-size: 5vw;
+  }
+}
+
 .on {
+  position: absolute;
   display: flex;
   width: 10vw;
   height: 5vh;
@@ -54,9 +78,11 @@
   border-radius: 10px;
   font-size: 1.2vw;
   font-weight: bold;
+  z-index: 2;
 }
 
 .off {
+  position: absolute;
   display: flex;
   width: 10vw;
   height: 5vh;
@@ -68,13 +94,31 @@
   border-radius: 10px;
   font-size: 1.2vw;
   font-weight: bold;
+  z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  .on,
+  .off {
+    font-size: 3vw;
+  }
 }
 
 .bulbonimg {
+  position: absolute;
   width: 40%;
 }
 
 .bulboffimg {
+  position: absolute;
   margin-top: 3vw;
   width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .bulbonimg,
+  .bulboffimg {
+    top: 20vw;
+    width: 60%;
+  }
 }
