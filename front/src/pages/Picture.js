@@ -10,16 +10,16 @@ export function Picture() {
 
   const url = "http://10.150.150.72:5000/plant/path";
   useEffect(() => {
-    axios
-      .get(url)
-      .then((response) => {
-        setData(response.data);
+    (async () => {
+      try {
+        const { data } = await axios.get(url);
+        setData(data);
         console.log("성공");
-        console.log(response.data);
-      })
-      .catch((error) => {
+      } catch (e) {
         console.log("실패");
-      });
+        console.log(e);
+      }
+    })();
   }, [status]);
 
   return (
