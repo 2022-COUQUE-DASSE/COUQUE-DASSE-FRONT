@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Header } from "../components/Header";
 import "../css/Picture.css";
+import { Helmet } from "react-helmet";
 
 export function Picture() {
   const [status, setStatus] = useState(false);
@@ -23,6 +24,9 @@ export function Picture() {
 
   return (
     <div>
+      <Helmet>
+        <title>나의 식물보기</title>
+      </Helmet>
       <Header />
       <img
         className="grass"
@@ -32,11 +36,7 @@ export function Picture() {
         <div className="picturediv">
           <div className="imgandtext">
             <div className="divpicenter">
-              <img
-                src={data}
-                className="pictureimg"
-                alt="plant-pic"
-              ></img>
+              <img src={data} className="pictureimg" alt="plant-pic"></img>
             </div>
             <div
               className="loadingbox"

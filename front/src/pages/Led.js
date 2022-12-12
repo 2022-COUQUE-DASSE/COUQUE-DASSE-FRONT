@@ -2,12 +2,16 @@ import { Header } from "../components/Header";
 import { useState } from "react";
 import "../css/Led.css";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 export function Led() {
   const [modal, setModal] = useState(false);
   return (
     <div className="Ledcenter">
       <Header />
+      <Helmet>
+        <title>인공 햇빛 조절하기</title>
+      </Helmet>
       <img
         className="grass"
         src="https://static.vecteezy.com/system/resources/previews/000/517/088/original/vector-landscape-illustration.png"
