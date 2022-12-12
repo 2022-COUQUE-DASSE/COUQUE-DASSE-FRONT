@@ -33,7 +33,7 @@ export function Picture() {
           <div className="imgandtext">
             <div className="divpicenter">
               <img
-                src="https://cdn.kqnews.kr/news/photo/202203/3174_6257_25.jpg"
+                src={data}
                 className="pictureimg"
                 alt="plant-pic"
               ></img>
