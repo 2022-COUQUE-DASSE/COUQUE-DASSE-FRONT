@@ -8,10 +8,10 @@ import axios from "axios";
 export function Led() {
   const [modal, setModal] = useState(false);
 
-  function ledValueSubmit(){
+  function ledValueSubmit() {
     axios
-    .get(`http://10.150.150.72:5000/plant/led?val=${modal}`,1)
-    .then((res)=>console.log(res))
+      .get(`http://10.150.150.72:5000/plant/led?val=${modal}`, 1)
+      .then((res) => console.log(res));
   }
   return (
     <div className="Ledcenter">
@@ -32,8 +32,17 @@ export function Led() {
             }}
           >
             {/* ?val=${modal} */}
-            <form action='http://10.150.150.72:5000/plant/led?val=2' method="get">
-              <button type="submit" value={modal} onClick={axios.get(`http://10.150.150.72:5000/plant/led?val=${modal}`,1).then((res)=>console.log(res))}></button>
+            <form
+              action="http://10.150.150.72:5000/plant/led?val=2"
+              method="get"
+            >
+              <button
+                type="submit"
+                value={modal}
+                onClick={axios
+                  .get(`http://10.150.150.72:5000/plant/led?val=${modal}`, 1)
+                  .then((res) => console.log(res))}
+              ></button>
             </form>
             {modal ? <ON /> : null}
             {modal ? null : <OFF />}
