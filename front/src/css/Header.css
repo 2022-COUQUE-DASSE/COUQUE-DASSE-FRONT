@@ -25,6 +25,12 @@
 
 @media (max-width: 1000px) {
   .header {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
     top: 4vw;
     height: 10vw;
   }
@@ -48,4 +54,10 @@ a {
   color: white;
   font-size: 1.5vw;
   font-weight: bolder;
+}
+
+@media (max-width: 1000px) {
+  .headertext {
+    font-size: 3vw;
+  }
 }

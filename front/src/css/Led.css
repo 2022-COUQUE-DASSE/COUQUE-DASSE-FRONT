@@ -24,6 +24,12 @@
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .buttonbox {
+    width: 80%;
+  }
+}
+
 .modal {
   position: relative;
   display: flex;
@@ -106,12 +112,14 @@
 
 .bulbonimg {
   position: absolute;
+  top: 2vh;
   width: 40%;
 }
 
 .bulboffimg {
+  margin-top: 3.2vw;
   position: absolute;
-  margin-top: 3vw;
+  top: 2vh;
   width: 30%;
 }
 
