@@ -10,6 +10,7 @@ export function Home() {
         className="grass"
         src="https://static.vecteezy.com/system/resources/previews/000/517/088/original/vector-landscape-illustration.png"
       ></img>
+      <div className="Homecenter">
       <div className="Hometop">
         <Link to="/Picture" style={{ textDecoration: "none" }} className="link">
           <img className="boximg" src="/img/plant.png"></img>
@@ -22,6 +23,7 @@ export function Home() {
           <div className="picture"></div>
           <span className="boxtext">인공 햇빛 조절하기</span>
         </Link>
+      </div>
       </div>
     </div>
   );

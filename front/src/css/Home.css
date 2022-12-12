@@ -9,12 +9,27 @@
   object-fit: cover;
 }
 
+.Homecenter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .Homecenter {
+    flex-direction: column;
+  }
+}
+
 .Hometop {
   position: absolute;
   bottom: 15vw;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 60%;
+  justify-content: space-around;
 }
 
 @media (max-width: 800px) {
@@ -56,7 +71,6 @@
 @media (max-width: 800px) {
   .link {
     width: 100%;
-    bottom: 20vh;
   }
 }
 
@@ -70,7 +84,7 @@
 .boximg {
   position: absolute;
   top: 2vw;
-  width: 20%;
+  width: 30%;
 }
 
 @media (max-width: 800px) {
