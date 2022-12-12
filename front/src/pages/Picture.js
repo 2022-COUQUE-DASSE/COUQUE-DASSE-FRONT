@@ -25,7 +25,7 @@ export function Picture() {
         className="grass"
         src="https://static.vecteezy.com/system/resources/previews/000/517/088/original/vector-landscape-illustration.png"
       ></img>
-      <img src={data}></img>
+      <img src={data} alt="plant-pic"></img>
     </div>
   );
 }
